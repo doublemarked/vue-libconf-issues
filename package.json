@@ -3,9 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build --target lib --name example src/index.js",
-    "lint": "vue-cli-service lint",
     "demo": "http-server -p 9000 dist & http-server -p 8000 host"
   },
   "dependencies": {
@@ -19,15 +17,11 @@
     "vue-template-compiler": "^2.5.13"
   },
   "vue": {
-    "css": {
-      "extract": false
-    },
     "configureWebpack": {
       "output": {
         "publicPath": "CLOBBERED BY resolveLibConfig"
       }
     }
-
   },
   "babel": {
     "presets": [
